@@ -10,7 +10,7 @@ const App = () => {
 
   const url = "/api/clients?search=${input}";
 
-  const ge = async () => {
+  const getClient = async () => {
     try {
       const response = await fetch(url);
       const data = await response.json();
